@@ -1,0 +1,502 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* css reset above */
+
+
+
+body {
+    background-color: #F9F5EA;
+    color: #A2A09E;
+    margin: 30px auto 30px auto;
+    width: 1200px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+header {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 30px;
+    width: auto;
+    display: inline-block;
+}
+
+.pagenav a {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.pagenav a:last-child {
+    margin-right: 0;
+}
+
+.signin {
+    display: inline-block;
+}
+
+.signin button {
+    margin-left: 15px;
+}
+
+a {
+    text-decoration: none;
+    padding-bottom: 1px;
+    transition: all 0.2s ease;
+    color: #000;
+}
+
+a:hover {
+    border-bottom: solid 1px #0C3296;
+    /* color: #0C3296;
+    font-weight: 600; */
+    text-shadow: 0 0 .8px #0C3296;
+}
+
+button {
+    background-color: #0C3296;
+    border-radius: 5px;
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 14px;
+    color: #fff;
+    padding: 8px 15px;
+    box-shadow: 0 3px #000;
+    border: none;
+    transition: 0.25s all ease;
+}
+
+button:hover {
+    box-shadow: 0 2px #000;
+    background-color: #102759;
+    color: #fff;
+}
+
+button:active {
+    box-shadow: none;
+    color: #102759;
+    background-color: #fff;
+}
+
+p {
+    line-height: 25px;
+}
+
+.leader {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 60px;
+
+}
+
+.leaderinfo,
+.leaderimage {
+    display: inline-block;
+    flex: 0 1 50%;
+    min-width: none;
+}
+
+.leaderimage img {
+    width: 100%;
+    height: auto;
+}
+
+.leaderinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 60px;
+}
+
+
+h1,
+h2 {
+    color: #102759;
+    font-size: 42px;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+
+
+.p-leader {
+    padding-bottom: 20px;
+}
+
+.emailform {
+    padding-bottom: 20px;
+    display: flex;
+    width: 75%;
+}
+
+.emailform input {
+    flex: 1 1 50%;
+    padding: 12px 15px;
+    margin-right: 20px;
+    border: solid 1px #A2A09E;
+    border-radius: 5px;
+    outline: none;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.emailform input:focus {
+    border: solid 1px #0C3296;
+    box-shadow: 0px 0px 2px 2px #0C3296;
+}
+
+.guarantees {
+    display: inline;
+}
+
+.guarantee img {
+    vertical-align: middle;
+    display: inline;
+    height: 15px;
+    width: 15px;
+}
+
+.guarantee p {
+    display: inline;
+    font-size: 14px;
+}
+
+.guarantee:first-child {
+    margin-right: 15px;
+}
+
+
+
+.features,
+.pricesheets {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.feature,
+.pricesheet {
+    border: solid 1px #A2A09E;
+    border-radius: 5px;
+    flex: 1 1 25%;
+    margin: 0 40px 40px 0;
+    padding: 20px;
+}
+
+.feature {
+    background-color: #fff;
+}
+
+.pricesheet:lastchild,
+.feature:last-child {
+    margin: 0 0 0 0;
+}
+
+.bold {
+    color: #000;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 20px;
+    color: #000;
+    padding: 10px 0;
+    font-weight: 500;
+}
+
+.priceinfo {
+    padding-bottom: 20px;
+}
+
+.pricesheet {
+    background-color: #FEF1D1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: 0.25s all ease;
+}
+
+.p-option {
+    padding: 8px 15px;
+    background-color: #102759;
+    box-shadow: 0 1px 5px #102759;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #fff;
+    box-shadow: none;
+}
+
+.p-button {
+    display: block;
+    margin: 20px 0;
+    background-color: transparent;
+    color: #102759;
+    border: solid 1px #102759;
+    box-shadow: none;
+}
+
+.btnselected {
+    background-color: #0C3296;
+    color: #fff;
+    border: none;
+    box-shadow: 0 3px #000;
+}
+
+.pselected {
+    box-shadow: 1px 3px 8px 2px #A2A09E;
+}
+
+.p-list {
+    color: #000;
+    padding-bottom: 5px;
+}
+
+h4 {
+    font-size: 28px;
+}
+
+li {
+    list-style: none;
+    line-height: 25px;
+}
+
+.price {
+    margin-top: auto;
+}
+
+.advert {
+    background-color: transparent;
+    border: solid 1px #000;
+}
+
+.advert-p {
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.advert img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+
+@media (max-width: 1500px) {
+
+    body {
+        width: 800px;
+    }
+
+    .guarantees div {
+        display: block;
+    }
+
+    .features,
+    .pricesheets {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .feature,
+    .pricesheet {
+        flex: 0 1 42%;
+        margin: 0 0 40px 0;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    body {
+        width: 600px;
+    }
+
+    header {
+        margin-bottom: 40px;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .logo {
+        align-self: flex-start;
+    }
+
+    .signin {
+        align-self: flex-end;
+        position: absolute;
+    }
+
+    nav {
+        align-self: flex-start;
+        margin-top: 20px;
+    }
+
+
+    .leader {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .leaderimage {
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    .leaderinfo {
+        flex: 1 1 100%;
+        padding-right: 0;
+    }
+
+    .features,
+    .pricesheets {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .feature,
+    .pricesheet {
+        margin: 0 0 20px 0;
+        position: relative;
+    }
+
+    .p-button {
+        align-self: flex-end;
+        position: absolute;
+        margin: 0;
+    }
+
+    ul {
+        margin: 20px 0 20px 0;
+    }
+
+    .advert {
+        width: 50%;
+    }
+}
+
+@media (max-width: 660px) {
+
+    body {
+        width: 500px;
+    }
+
+    header {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 580px) {
+
+    body {
+        width: 420px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body {
+        width: 320px;
+    }
+}
+
+
+
+/* nav underline moves the psotion
+nav buttons jump to section
+form button sizing throughout
+price sheets  add box shadow to selected
+price sheets js functionality */
