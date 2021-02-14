@@ -94,18 +94,36 @@ video {
 body {
     background-color: #F9F5EA;
     color: #A2A09E;
-    margin: 30px auto 30px auto;
-    width: 1200px;
+    /* margin: 0 auto 30px auto;
+    width: 1200px; */
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
 }
 
 header {
-    margin-bottom: 60px;
+    width: 100vw;
+    border-bottom: solid 1px #A2A09E;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #F9F5EA;
+}
+
+.headercontent {
+    margin: 10px auto 20px auto;
+    width: 1200px;
+    text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 0 10px 0;
+    z-index: 2;
+}
+
+.container {
+    margin: 0 auto 30px auto;
+    width: 1200px;
 }
 
 .logo {
@@ -134,15 +152,32 @@ header {
 a {
     text-decoration: none;
     padding-bottom: 1px;
-    transition: all 0.2s ease;
     color: #000;
+    position: relative;
+}
+
+a:before {
+    content: attr(data-something);
+    font-weight: 500;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0C3296;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.2s ease;
+}
+
+a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
 }
 
 a:hover {
-    border-bottom: solid 1px #0C3296;
-    /* color: #0C3296;
-    font-weight: 600; */
-    text-shadow: 0 0 .8px #0C3296;
+    color: #0C3296;
+    font-weight: 500;
 }
 
 button {
@@ -218,7 +253,7 @@ h2 {
 .emailform {
     padding-bottom: 20px;
     display: flex;
-    width: 75%;
+    width: 100%;
 }
 
 .emailform input {
@@ -230,11 +265,16 @@ h2 {
     outline: none;
     font-family: inherit;
     font-size: 16px;
+    transition: 0.25s all ease;
 }
 
 .emailform input:focus {
     border: solid 1px #0C3296;
     box-shadow: 0px 0px 2px 2px #0C3296;
+}
+
+#emailbtn {
+    width: 25%;
 }
 
 .guarantees {
@@ -280,9 +320,12 @@ h2 {
     background-color: #fff;
 }
 
-.pricesheet:lastchild,
 .feature:last-child {
-    margin: 0 0 0 0;
+    margin: 0 0 40px 0;
+}
+
+.pricesheet:lastchild {
+    margin: 0 0 40px 0;
 }
 
 .bold {
@@ -301,7 +344,7 @@ h3 {
     padding-bottom: 20px;
 }
 
-.pricesheet {
+.sheet {
     background-color: #FEF1D1;
     display: flex;
     flex-direction: column;
@@ -326,6 +369,17 @@ h3 {
     color: #102759;
     border: solid 1px #102759;
     box-shadow: none;
+}
+
+.sheet:hover {
+    box-shadow: 1px 3px 8px 2px #A2A09E;
+}
+
+.sheet:hover .p-button {
+    background-color: #0C3296;
+    color: #fff;
+    border: none;
+    box-shadow: 0 3px #000;
 }
 
 .btnselected {
@@ -377,7 +431,8 @@ li {
 
 @media (max-width: 1500px) {
 
-    body {
+    .container,
+    .headercontent {
         width: 800px;
     }
 
@@ -401,14 +456,13 @@ li {
 
 @media (max-width: 900px) {
 
-    body {
+    .container,
+    .headercontent {
         width: 600px;
     }
 
-    header {
-        margin-bottom: 40px;
+    .headercontent {
         flex-direction: column;
-        position: relative;
     }
 
     .logo {
@@ -470,7 +524,8 @@ li {
 
 @media (max-width: 660px) {
 
-    body {
+    .container,
+    .headercontent {
         width: 500px;
     }
 
@@ -481,7 +536,8 @@ li {
 
 @media (max-width: 580px) {
 
-    body {
+    .container,
+    .headercontent {
         width: 420px;
     }
 }
@@ -489,14 +545,30 @@ li {
 @media (max-width: 480px) {
 
     body {
+        font-size: 14px;
+    }
+
+    h1,
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .container,
+    .headercontent {
         width: 320px;
     }
+
+    .p-button {
+        align-self: auto;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .emailform input {
+        padding: 5px 0 5px 10px;
+    }
 }
-
-
-
-/* nav underline moves the psotion
-nav buttons jump to section
-form button sizing throughout
-price sheets  add box shadow to selected
-price sheets js functionality */

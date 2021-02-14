@@ -13,154 +13,166 @@
 </head>
 
 <body>
-
     <header>
-        <img src="images/logo.png" alt="Logo for desi.gn" class="logo">
+        <div class="headercontent">
+            <img src="images/logo.png" alt="Logo for desi.gn" class="logo">
 
-        <nav class="pagenav">
-            <a href="#">Home</a>
-            <a href="#">Features</a>
-            <a href="#">Pricing & Plans</a>
-        </nav>
+            <nav class="pagenav">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#prices">Pricing & Plans</a>
+            </nav>
 
-        <div class="signin">
-            <a href="signin.html">Sign In</a>
-            <button type="button" id="signin">Try for free</button>
+            <div class="signin">
+                <a href="signin.html">Sign In</a>
+                <button type="button" id="signin">Try for free</button>
+            </div>
         </div>
     </header>
 
-    <section class="leader">
-        <div class="leaderinfo">
-            <h1>Unlimited Designs. <br>
-                Flat Monthly Fee.</h1>
 
-            <p class="p-leader">Get unlimited designs in areas such as web design, app design, brochures and much more
-                for a flat monthly
-                fee. No additional charges.</p>
+    <div class="container">
 
-            <form action="#" class="emailform">
-                <input type="email" name="email" id="email" placeholder="Enter e-mail address">
-                <button type="button" id="email">Try for free</button>
-            </form>
+        <section class="leader" id="home">
+            <div class="leaderinfo">
+                <h1>Unlimited Designs. <br>
+                    Flat Monthly Fee.</h1>
 
-            <div class="guarantees">
-                <div class="guarantee">
-                    <img src="images/Checkmark.png">
-                    <p>14 day money back guarantee.</p>
+                <p class="p-leader">Get unlimited designs in areas such as web design, app design, brochures and much
+                    more
+                    for a flat monthly
+                    fee. No additional charges.</p>
+
+                <form action="#" class="emailform">
+                    <input type="email" name="email" placeholder="Enter e-mail address">
+                    <button type="button" id="emailbtn">Try for free</button>
+                </form>
+
+                <div class="guarantees">
+                    <div class="guarantee">
+                        <img src="images/Checkmark.png">
+                        <p>14 day money back guarantee.</p>
+                    </div>
+                    <div class="guarantee">
+                        <img src="images/Checkmark.png">
+                        <p>No credit card required.</p>
+                    </div>
                 </div>
-                <div class="guarantee">
-                    <img src="images/Checkmark.png">
-                    <p>No credit card required.</p>
+            </div>
+
+            <div class="leaderimage">
+                <img src="images/BG Hero.png" alt="change by design book on office desk">
+            </div>
+
+        </section>
+
+        <section class="features" id="features">
+            <div class="feature 1">
+                <img src="images/📤.png" alt="request emoji">
+                <h3>Request Design</h3>
+                <p>Send us a message with all the details. At any time during the day. Through <span
+                        class="bold">Discord,
+                        Slack,</span> or even
+                    <span class="bold">WhatsApp</span>.</p>
+            </div>
+            <div class="feature 2">
+                <img src="images/🤸.png" alt="cartwheel emoji">
+                <h3>Quick Response</h3>
+                <p>One of our designers will get back to you within 24 hrs detailing the time frame you will be
+                    receiving
+                    your designs.</p>
+            </div>
+            <div class="feature 3">
+                <img src="images/📚.png" alt="pile of books emoji">
+                <h3>Revisions</h3>
+                <p>Unlimited revisions are included in all our plans. At no extra fee whatsoever so that we can ensure
+                    you
+                    love the final designs.</p>
+            </div>
+            <div class="feature 4">
+                <img src="images/🎉.png" alt="celebration party popper emoji">
+                <h3>All done</h3>
+                <p>Done with one project? No problem, keep asking for more, it's all included in the price. Again, at no
+                    extra fee whatsoever!</p>
+            </div>
+        </section>
+
+        <section class="prices" id="prices">
+            <h2>Transparent Pricing.</h2>
+            <p class="priceinfo">No hidden fees or extra charges, view the charts for all things pricing-related.</p>
+
+            <div class="pricesheets">
+
+                <div class="pricesheet sheet">
+                    <!-- pselected -->
+                    <span class="p-option">Startup</span>
+                    <button type="button" class="p-button">Try for free</button>
+                    <!-- btnselected -->
+                    <ul>
+                        <li class="p-list">
+                            <p>👉 Brochures, websites, applications.</p>
+                        </li>
+                        <li class="p-list">
+                            <p>👉 Free stock photos.</p>
+                        </li>
+                        <li class="p-list">
+                            <p>👉 Unlimited revisions.</p>
+                        </li>
+                        <li class="p-list">
+                            <p>👉 Unlimited orders.</p>
+                        </li>
+                    </ul>
+                    <h4 class="price">
+                        <span class="bold">$699</span>/mo
+                    </h4>
                 </div>
-            </div>
-        </div>
 
-        <div class="leaderimage">
-            <img src="images/BG Hero.png" alt="change by design book on office desk">
-        </div>
+                <div class="pricesheet sheet">
+                    <span class="p-option">Business</span>
+                    <button type="button" class="p-button">Try for free</button>
+                    <ul>
+                        <li class="p-list">
+                            <p>👉 All startup features.</p>
+                        </li>
+                        <li class="p-list">
+                            <p>👉 Front-end development.</p>
+                        </li>
+                        <li class="p-list">
+                            <p>👉 Full-time support.</p>
+                        </li>
+                        <li class="p-list">
+                            <p>👉 Slack communication.</p>
+                        </li>
+                    </ul>
+                    <h4 class="price">
+                        <span class="bold">$1299</span>/mo
+                    </h4>
+                </div>
 
-    </section>
+                <div class="pricesheet sheet">
+                    <span class="p-option">Enterprise</span>
+                    <button type="button" class="p-button">Schedule consultancy call</button>
+                    <ul>
+                        <li class="p-list">👉 We offer customizable plans for enterprises who are looking to make use of
+                            our
+                            service.</li>
+                    </ul>
+                    <h4 class="price">
+                        <span class="bold">Contact Us</span>
+                    </h4>
+                </div>
 
-    <section class="features">
-        <div class="feature 1">
-            <img src="images/📤.png" alt="request emoji">
-            <h3>Request Design</h3>
-            <p>Send us a message with all the details. At any time during the day. Through <span class="bold">Discord,
-                    Slack,</span> or even
-                <span class="bold">WhatsApp</span>.</p>
-        </div>
-        <div class="feature 2">
-            <img src="images/🤸.png" alt="cartwheel emoji">
-            <h3>Quick Response</h3>
-            <p>One of our designers will get back to you within 24 hrs detailing the time frame you will be receiving
-                your designs.</p>
-        </div>
-        <div class="feature 3">
-            <img src="images/📚.png" alt="pile of books emoji">
-            <h3>Revisions</h3>
-            <p>Unlimited revisions are included in all our plans. At no extra fee whatsoever so that we can ensure you
-                love the final designs.</p>
-        </div>
-        <div class="feature 4">
-            <img src="images/🎉.png" alt="celebration party popper emoji">
-            <h3>All done</h3>
-            <p>Done with one project? No problem, keep asking for more, it's all included in the price. Again, at no
-                extra fee whatsoever!</p>
-        </div>
-    </section>
+                <div class="pricesheet 4 advert">
+                    <p class="advert-p">Ads via Carbon</p>
+                    <img src="images/ads.png" alt="empty tunnel">
+                    <p class="ad-text">Get 20% off Adobe Plans using our Promo Code 'desi.gn20'</p>
+                </div>
+        </section>
 
-    <section class="prices">
-        <h2>Transparent Pricing.</h2>
-        <p class="priceinfo">No hidden fees or extra charges, view the charts for all things pricing-related.</p>
 
-        <div class="pricesheets">
 
-            <div class="pricesheet 1">
-                <!-- pselected -->
-                <span class="p-option">Startup</span>
-                <button type="button" class="p-button">Try for free</button>
-                <!-- btnselected -->
-                <ul>
-                    <li class="p-list">
-                        <p>👉 Brochures, websites, applications.</p>
-                    </li>
-                    <li class="p-list">
-                        <p>👉 Free stock photos.</p>
-                    </li>
-                    <li class="p-list">
-                        <p>👉 Unlimited revisions.</p>
-                    </li>
-                    <li class="p-list">
-                        <p>👉 Unlimited orders.</p>
-                    </li>
-                </ul>
-                <h4 class="price">
-                    <span class="bold">$699</span>/mo
-                </h4>
-            </div>
-
-            <div class="pricesheet 2">
-                <span class="p-option">Business</span>
-                <button type="button" class="p-button">Try for free</button>
-                <ul>
-                    <li class="p-list">
-                        <p>👉 All startup features.</p>
-                    </li>
-                    <li class="p-list">
-                        <p>👉 Front-end development.</p>
-                    </li>
-                    <li class="p-list">
-                        <p>👉 Full-time support.</p>
-                    </li>
-                    <li class="p-list">
-                        <p>👉 Slack communication.</p>
-                    </li>
-                </ul>
-                <h4 class="price">
-                    <span class="bold">$1299</span>/mo
-                </h4>
-            </div>
-
-            <div class="pricesheet 3">
-                <span class="p-option">Enterprise</span>
-                <button type="button" class="p-button">Schedule consultancy call</button>
-                <ul>
-                    <li class="p-list">👉 We offer customizable plans for enterprises who are looking to make use of our
-                        service.</li>
-                </ul>
-                <h4 class="price">
-                    <span class="bold">Contact Us</span>
-                </h4>
-            </div>
-
-            <div class="pricesheet 4 advert">
-                <p class="advert-p">Ads via Carbon</p>
-                <img src="images/ads.png" alt="empty tunnel">
-                <p class="ad-text">Get 20% off Adobe Plans using our Promo Code 'desi.gn20'</p>
-            </div>
-    </section>
-
-    <footer>Made with ♥️ by Hannah</footer>
+        <footer>Made with ♥️ by Hannah</footer>
+    </div>
 
     <script src="app.js"></script>
 
